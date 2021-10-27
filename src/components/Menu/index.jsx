@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import "./styles.css";
 
 export const Menu = () => {
@@ -8,6 +9,11 @@ export const Menu = () => {
       document.querySelector(".container").classList.toggle("show-menu");
     });
   };
+
+  useEffect(() => {
+    handleMenu()
+  })
+
   return (
     <div className="container">
       <div className="hamburguer" onClick={handleMenu}>

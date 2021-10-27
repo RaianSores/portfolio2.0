@@ -3,40 +3,40 @@ import "./styles.css";
 
 export const Contact = () => {
   return (
-    <div>
-      <sectiom className="sessao-contato" id="contatos">
-        <div className="contato-wrapper">
-          <div className="contato-left">
+    <>
+      <div className="sessaoContato" id="contatos">
+        <div className="contatoWrapper">
+          <div className="contatoLeft">
             <img src="contato.jpg" alt="" />
           </div>
-          <div className="contato-rigth">
+          <div className="contatoRigth">
             <h1>Contato</h1>
             <form>
-              <div className="input-group">
+              <div className="inputGroup">
                 <input type="text" className="field" id="nome" />
-                <label for="nome" className="field-label">
+                <label htmlFor="nome" className="fieldLabel">
                   Nome
                 </label>
               </div>
-              <div className="input-group">
+              <div className="inputGroup">
                 <input type="text" className="field" id="email" />
-                <label for="email" className="field-label">
+                <label htmlFor="email" className="fieldLabel">
                   E-mail
                 </label>
               </div>
-              <div className="input-group">
+              <div className="inputGroup">
                 <textarea className="field" id="mensagem"></textarea>
-                <label for="mensagem" className="field-label">
+                <label htmlFor="mensagem" className="fieldLabel">
                   Mensagem
                 </label>
               </div>
-              <button type="submit" className="btn-submit">
+              <button type="submit" className="btnSubmit">
                 Enviar
               </button>
             </form>
           </div>
         </div>
-      </sectiom>
-    </div>
+      </div>
+    </>
   );
 };

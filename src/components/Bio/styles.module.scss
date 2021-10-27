@@ -1,0 +1,25 @@
+.titleBio {
+  max-width: 780px;
+  text-align: center;
+  margin: 60px auto;
+  font-family: "Courier New", Courier, monospace;
+  color: #fff;
+  font-size: 5px;
+
+  ::after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca 0.7s infinite;
+  }
+
+  @keyframes pisca {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+}
