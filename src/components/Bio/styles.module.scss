@@ -1,15 +1,17 @@
 .titleBio {
-  max-width: 780px;
+  position: absolute;
+  max-width: 80%;
   text-align: center;
-  margin: 60px auto;
+  margin: 70px auto;
+  height: 50px;
   font-family: "Courier New", Courier, monospace;
   color: #fff;
   font-size: 15px;
+  margin-left: 5rem;
 
   ::after {
     content: "|";
     margin-left: 5px;
-    opacity: 1;
     animation: pisca 0.7s infinite;
   }
 

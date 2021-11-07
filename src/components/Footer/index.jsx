@@ -1,16 +1,18 @@
 import React from "react";
-import "./styles.css";
+
+import styles from "./styles.module.scss";
 
 export const Footer = () => {
   return (
     <>
       <footer>
-        <div className="footer-content">
+        <div className={styles.footerContent}>
           <p>
             Copyright &copy; 2020 - Mindset Sistemas - Todos os direitos
             reservados
           </p>
-          <div className="social-list">
+
+          <div className={styles.socialList}>
             <ul>
               <li>
                 <a href="https://www.linkedin.com/in/raian-soares-pinheiro-375427139" target="_blank">
@@ -31,9 +33,6 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
-      <a href="#home" id="link-topo">
-        <i className="fas fa-arrow-up"></i>
-      </a>
     </>
   );
 };

@@ -1,25 +1,29 @@
 import React from "react";
-import "./styles.css";
+import { BrowserRouter as Router, Link} from "react-router-dom";
+
+
+
+import styles from './styles.module.scss';
 
 export const Navigation = () => {
   return (
-    <div className="navigation">
-      <nav>
+    <Router>
+      <div className={styles.navigation}>
         <ul>
           <li>
-            <a href="#">About</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#">Portfolio</a>
+            <Link to="/skills">Skills</Link>
           </li>
           <li>
-            <a href="#">Blog</a>
+            <Link to="/projects">Projects</Link>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <Link to="/contacts">Contacts</Link>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </Router>
   );
 };
